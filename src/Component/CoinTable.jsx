@@ -11,17 +11,17 @@ import { useNavigate } from 'react-router-dom';
 const CoinTable = () => {
 
   const [coins, setCoins] = useState([]);
-  const [loading, setloading] = useState(false);
-  const [search, setsearch] = useState("")
+  // const [loading, setloading] = useState(false);
+  // const [search, setsearch] = useState("")
 
   const { currency } = CryptoState();
 
   const fetchCoins = async () => {
 
-    setloading(true)
+    // setloading(true)
     const { data } = await axios.get(CoinList(currency))
     setCoins(data);
-    setloading(false);
+    // setloading(false);
   }
 
   console.log(coins)
@@ -32,13 +32,13 @@ const CoinTable = () => {
 
   const nevigate = useNavigate();
 
-  const handleSearch = () => {
-    return coins.filter(
-      (coin) =>
-        coin.name.toLowerCase().includes(search) ||
-        coin.symbol.toLowerCase().includes(search)
-    );
-  };
+  // const handleSearch = () => {
+  //   return coins.filter(
+  //     (coin) =>
+  //       coin.name.toLowerCase().includes(search) ||
+  //       coin.symbol.toLowerCase().includes(search)
+  //   );
+  // };
 
   
   
@@ -51,7 +51,8 @@ const CoinTable = () => {
       <div className='table-container'>
         <div className='title-search'>
           <h1>Cryptocurrency Prices by Market Cap</h1>
-          <input className='place' placeholder='Search for Crypto Currency' type='text' onChange={(e) =>{setsearch(e.target.value)}} />
+          <input className='place' placeholder='Search for Crypto Currency' type='text'  /> 
+          {/* // onChange={(e) =>{setsearch(e.target.value)}} */}
         </div>
 
 
