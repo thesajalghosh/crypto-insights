@@ -1,0 +1,18 @@
+
+.carousel-container
+{
+    margin: 20px;
+    width: 75%;
+}
+.carousel-image{
+    height: 100px;
+    /* width: 100px; */
+}
+.item-style{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bolder;
+    color: aliceblue;
+}

@@ -1,0 +1,31 @@
+.main-container{
+    background-image: url('../Image/banner.jpg');
+    background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.banner{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: xxx-large;
+    font-family: sans-serif;
+    margin-bottom: 4px;
+}
+.para{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    margin-top: 6px;
+
+}
