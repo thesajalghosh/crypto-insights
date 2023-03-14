@@ -12,7 +12,7 @@ const CoinTable = () => {
 
   const [coins, setCoins] = useState([]);
   // const [loading, setloading] = useState(false);
-  // const [search, setsearch] = useState("")
+  const [search, setsearch] = useState("")
 
   const { currency } = CryptoState();
 
@@ -33,13 +33,13 @@ const CoinTable = () => {
 
   const nevigate = useNavigate();
 
-  // const handleSearch = () => {
-  //   return coins.filter(
-  //     (coin) =>
-  //       coin.name.toLowerCase().includes(search) ||
-  //       coin.symbol.toLowerCase().includes(search)
-  //   );
-  // };
+  const handleSearch = () => {
+    return coins.filter(
+      (coin) =>
+        coin.name.toLowerCase().includes(search) ||
+        coin.symbol.toLowerCase().includes(search)
+    );
+  };
 
   
   
@@ -52,8 +52,8 @@ const CoinTable = () => {
       <div className='table-container'>
         <div className='title-search'>
           <h1>Cryptocurrency Prices by Market Cap</h1>
-          <input className='place' placeholder='Search for Crypto Currency' type='text'  /> 
-          {/* // onChange={(e) =>{setsearch(e.target.value)}} */}
+          <input className='place' placeholder='Search for Crypto Currency' type='text' onChange={(e) =>{setsearch(e.target.value)}} /> 
+        
         </div>
 
 
@@ -70,7 +70,7 @@ const CoinTable = () => {
           <tbody>
             {
              
-              coins.map((singleCoin, id) =>{
+              handleSearch().map((singleCoin, id) =>{
                 const profit = singleCoin.price_change_percentage_24h >= 0;
                 console.log(profit)
 
@@ -101,6 +101,8 @@ const CoinTable = () => {
               })
             }
           </tbody>
+
+
 
 
         </table>

@@ -74,3 +74,15 @@ th{
   .symbol-style{
       text-transform: uppercase;
   }
+
+  .pagination-style{
+      display: flex;
+      flex-direction: row;
+      gap: 29px;
+      text-decoration: none;
+      list-style-type: none;
+      padding: 7px;
+      margin-top: 7px;
+      margin-bottom: 7px;
+      cursor: pointer;
+  }

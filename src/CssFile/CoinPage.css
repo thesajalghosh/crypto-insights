@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.coinpage__container{
+    display: flex;
+    flex-direction: row;
+}
+.coinpage__sidebar{
+    width: 30%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 2px solid rgb(153, 138, 138);
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.sidebar__heading{
+    margin-top: 15px;
+    font-size: x-large;
+}
+.sidebar__description{
+    font-size: large;
+    margin-top: 20px;
+}
+.market__data{
+    font-size: 25px;
+    padding-top: 45px;
+    
+    
+}

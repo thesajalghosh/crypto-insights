@@ -2,7 +2,7 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './Component/Home';
-import Coin from './Component/Coin';
+import CoinPage from './Component/CoinPage';
 import Header from './Component/Header';
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
         <Routes>
 
           <Route path="/" element={<Home />}></Route>
-          <Route path="/coin" element={<Coin />}></Route>
+          <Route path="/coins/:id" element={<CoinPage />}></Route>
 
         </Routes>
 

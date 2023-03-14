@@ -8,7 +8,7 @@ const Header = () => {
     const navigate = useNavigate();
 
     const {currency, setCurrency} = CryptoState();
-    console.log(currency);
+    // console.log(currency);
 
 
     return (
