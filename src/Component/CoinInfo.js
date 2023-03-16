@@ -43,6 +43,7 @@ const CoinInfo = ({ coin }) => {
   },[coin.id]);
 
   console.log(historicData);
+  console.log(setDays)
 
   
 
