@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: row;
 }
-.coinpage__sidebar{
+.coinpage__leftsidebar{
     width: 30%;
     height: 100vh;
     display: flex;
@@ -27,4 +27,9 @@
     padding-top: 45px;
     
     
+}
+.coinpage__rightsidebar{
+    width: 70%;
+ 
+    color: black;
 }
