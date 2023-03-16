@@ -1,4 +1,7 @@
 .coininfo__buttons{
-    /* height: 10px; */
-    /* background-color: aquamarine; */
+    color: rgb(214, 212, 212);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 40px;
 }

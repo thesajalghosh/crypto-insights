@@ -8,6 +8,7 @@ import Chart from 'chart.js/auto';
 import { CategoryScale } from 'chart.js';
 import '../CssFile/CoinInfo.css';
 import { chartDays } from "../ButtonData";
+import SelectButtons from "./SelectButtons";
 
 
 
@@ -82,7 +83,11 @@ const CoinInfo = ({ coin }) => {
 
             <div className='coininfo__buttons'>
             {chartDays.map((day) =>(
-              <button>{day.label}</button>
+              <SelectButtons
+              key={day.value}
+              onclick={()=>{setDays(day.value)}}
+              selected={day.value === days}
+              >{day.label}</SelectButtons>
             ))}
 
 
